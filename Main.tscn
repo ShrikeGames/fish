@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://csybsr4hsmwys"]
+
+[ext_resource type="Script" path="res://fish/FishSpawner.gd" id="1_j1kr5"]
+
+[node name="FishSpawner" type="Node2D" node_paths=PackedStringArray("creatures_node")]
+script = ExtResource("1_j1kr5")
+creatures_node = NodePath("Creatures")
+num_fish_to_spawn = 100
+
+[node name="Creatures" type="Node2D" parent="."]
